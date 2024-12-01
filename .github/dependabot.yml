@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Configuration for JavaScript/TypeScript dependencies
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly # Options: "daily", "weekly", "monthly"
+    versioning-strategy: increase-if-necessary # Options: "increase", "increase-if-necessary", "lockfile-only", "wide"
+    commit-message:
+      prefix: "deps"
+    # Optional: Ignore specific dependencies if necessary
+    ignore:
+      - dependency-name: "react"
+        versions: ["^17.0.0"]
