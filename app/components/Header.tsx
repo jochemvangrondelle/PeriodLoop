@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Text } from "native-base";
+import React from 'react';
+import { Box, Text } from '@gluestack-ui/themed-native-base';
 
 interface HeaderProps {
   title: string;
